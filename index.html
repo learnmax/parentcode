@@ -1,8 +1,15 @@
 <h1>Parent code for Global Learning XPRIZE tablets</h1>
 
+<script>
+  function handleClick(){
+    var inputString=document.getElementById("inputcode").value;
+    var inputCode=parseFloat(inputString);
+    alert("Please type in "+(inputCode^987654321));
+  }
+</script>
 <form>
   First name:<br>
   <input type="text" name="inputcode" value="">
   <br><br>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit" onclick="handleClick()">
 </form> 
