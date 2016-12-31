@@ -3,12 +3,12 @@
 <script>
   function handleClick(){
     var inputString=document.getElementById("inputcode").value;
-    var inputCode=parseFloat(inputString);
-    alert("Please type in "+(inputCode^987654321));
+    var inputCode=parseInt(inputString);
+    alert("Please type in "+(inputCode^987654321)+" for input code "+inputCode);
   }
 </script>
 <form action="#">
-  First name:<br>
+  Code diplayed on tablet:<br>
   <input type="text" id="inputcode" name="inputcode" value="">
   <br><br>
   <input type="submit" value="Submit" onclick="handleClick()">
